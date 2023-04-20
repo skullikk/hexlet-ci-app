@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: make setup
-      - run: make startup
+      - run: make start
 
   test:
     needs: setup
