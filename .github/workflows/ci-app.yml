@@ -9,12 +9,14 @@ jobs:
       - run: make startup
 
   test:
+    needs: setup
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - run: make test
 
   linter:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
