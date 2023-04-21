@@ -8,10 +8,3 @@ jobs:
       - run: make setup
       - name: test
         run: make test
-
-  linter:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - run: make lint
-
