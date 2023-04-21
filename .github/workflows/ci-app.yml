@@ -8,3 +8,5 @@ jobs:
       - run: make setup
       - name: test
         run: make test
+      - name: lint
+        run: make lint
